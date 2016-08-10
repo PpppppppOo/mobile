@@ -1,0 +1,64 @@
+
+/*px不会由于父级px样式影响子集px样式*/
+/*em会根据父级font-size样式进行等比缩放*/
+/*rem会根据父级中拥有px的根级样式进行等比缩放，如果没有则取html标签的px值，默认为16px*/			
+body
+	background-color #efeff4
+
+	header
+		position relative
+		width 16em
+		height 2em
+		background-color black
+		h1
+			font-size 1rem
+			text-align center
+			line-height 2rem
+			color white
+	img
+		width 1rem
+		height 1rem
+		position relative
+		top .2rem
+		margin-left .3rem			
+	.a1
+		position relative
+		margin-top .5rem
+		background-color white
+		width 16rem
+		height 2rem
+		line-height 2rem
+		&:after
+			position absolute
+			right .3rem
+			top .6rem
+			background-image:url(../../../img/images/10.png)
+			content ""
+			width 0.45rem
+			height 1.66rem
+			background-size 100%
+			background-repeat no-repeat
+		span
+			display inline-block
+			font-size .8rem
+			font-weight bold
+
+	.a2
+		margin-top 1rem
+		background-color white
+		width 16rem
+		height 4rem
+		line-height 2rem
+		i
+			display block
+			height 1px
+			width 14rem
+			background-color #efeff4
+			position absolute
+			left 2rem
+		span
+			display block
+			font-size .8rem
+			font-weight bold	
+
+			

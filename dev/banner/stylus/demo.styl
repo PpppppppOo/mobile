@@ -1,0 +1,31 @@
+.banner
+	width 20rem
+	height 10rem
+	position relative
+	overflow hidden 
+	a 
+		position absolute
+		top 0
+		display block
+		width @width
+		height @height
+		background-size 100% 100%
+		background-repeat no-repeat 
+		opacity 0
+		&.current
+			animation current .5s forwards
+			opacity 1
+		&.previous
+			animatio previous .5s forwards
+			opacity 1
+@keyframes previous
+	from
+		left 0rem
+	to
+		left -20rem
+@keyframes current
+	from
+		left 20rem
+	to
+		left 0
+		

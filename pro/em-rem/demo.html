@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="../../lib/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+		<title>em-rem</title>
+	</head>
+	<body>
+		<header>
+			<h1>发现</h1>
+		</header>
+		<div class="a1">
+		<img src="../../img/images/3.png">
+		<span>朋友圈</span>
+		<a></a>
+		</div>
+		<div class="a2">
+		
+		<span><img src="../../img/images/4.png"> 扫一扫</span>
+		<i></i>
+		
+		<span><img src="../../img/images/5.png"> 摇一摇</span>
+		</div>
+		<div class="a2">
+		<span><img src="../../img/images/6.png"> 附近的人</span>
+		<i></i>
+		<span><img src="../../img/images/7.png"> 漂流瓶</span>
+		</div>
+		<div class="a2">
+		<span><img src="../../img/images/8.png"> 购物</span>
+		<i></i>
+		<span><img src="../../img/images/9.png"> 游戏</span>
+		</div>
+		<div class="footer">
+		
+				</div>
+		<script>
+			function setRem(){
+				document.documentElement.style.fontSize= window.innerWidth / 16 +"px";
+			}
+			window.onresize = function(){
+				setRem();
+			};
+			setRem();
+		</script>
+	</body>
+</html>
